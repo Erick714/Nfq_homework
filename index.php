@@ -15,7 +15,7 @@
   <form class="" action="index.php" method="GET">
 
           <div class="input-field col s4">
-            <i class="material-icons prefix">account_circle</i>
+            <i class="material-icons prefix">search</i>
             <input id="icon_prefix" type="text" class="validate" name="value">
             <label for="icon_prefix">Search</label>
           </div>
@@ -36,21 +36,12 @@
           </div>
 
 
-          <div class="switch">
-            <label>
+          <div class="col s1">
               <i class="material-icons prefix inline">swap_vert</i>
-              <input type="checkbox">
-              <span class="lever"></span>
-              On
-            </label>
           </div>
 
-
-</div>
-
-
             <div class="col s2">
-                <input type="submit">
+              <input type="submit">
             </div>
 
   </form>
