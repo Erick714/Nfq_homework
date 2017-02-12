@@ -10,6 +10,10 @@
 
   </head>
   <body>
+    <?php include 'connect.php';
+    $sql ="SELECT * FROM Books ORDER BY RAND() LIMIT 50" ;
+    $result = $conn -> query($sql); ?>
+
 <nav class="fixed teal">
 <div class="row container">
   <form class="" action="index.php" method="GET">
@@ -49,9 +53,20 @@
 
 </nav>
 
+<ul>
 
 
+ <?php while( $row = mysqli_fetch_assoc($result)){
+      echo '<li>';
+      echo '"'.$row['ID'].'"';
+      echo '"'.$row['Name'].'"';
+      echo '"'.$row['Autor'].'"';
+      echo '"'.$row['Date'].'"';
+      echo '"'.$row['Genre'].'"';
+      echo '</li>';
+ } ?>
 
+</ul>
 
 
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
