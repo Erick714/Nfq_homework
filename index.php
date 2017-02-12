@@ -56,11 +56,11 @@ $sql = $sql_start.$sql_search_by.$sql_sort_by.$sql_limit;
 
 
 
-<nav class="fixed teal">
+<nav class=" teal container">
 <div class="row">
   <form class="" action="index.php" method="GET">
 
-          <div class="input-field col s2">
+          <div class="input-field col s4">
             <i class="material-icons prefix">search</i>
             <input id="icon_prefix" type="text" class="validate" name="value">
             <label for="icon_prefix">Search</label>
@@ -83,17 +83,15 @@ $sql = $sql_start.$sql_search_by.$sql_sort_by.$sql_limit;
           </div>
 
 
-          <div class="col s1">
-              <i class="material-icons prefix inline">swap_vert</i>
-          </div>
-
           <div class="col s2 range-field">
               <input type="range" id="test5" name="range" min="0" max="100" />
           </div>
 
-            <div class="col s2">
-              <input type="submit">
-            </div>
+<div class="valign-wrapper col s2 ">
+  <br>
+              <input class="waves-effect waves-light btn center center-align" type="submit">
+
+</div>
 
   </form>
 </div>
